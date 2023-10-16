@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Activity</title>
+  <style>
+    .exercise {
+      margin: 20px;
+    }
+    .rubric {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="exercise">
+    <h2>Typing Activity</h2>
+    <p class="rubric">Fill in the blanks with the correct verb forms in the present tense. <button id="checkButton" disabled>Check Answers</button> <button id="solveAllButton">Solve All</button></p>
+    
+    <p>1. She <input id="verb1" type="text" data-correct-answer="plays" value=""> (play) the piano every day. <span id="solveButton1" class="solveButton" data-question="1">(...)</span></p>
+    <p id="result1"></p>
+    
+    <p>2. They <input id="verb2" type="text" data-correct-answer="are studying" value=""> (study) English at the moment. <span id="solveButton2" class="solveButton" data-question="2">(...)</span></p>
+    <p id="result2"></p>
+    
+    <p>3. I <input id="verb3" type="text" data-correct-answer="like" value=""> (like) to watch movies on weekends. <span id="solveButton3" class="solveButton" data-question="3">(...)</span></p>
+    <p id="result3"></p>
+    
+  </div>
+
+  <script src="scripts/typing.js"></script>
+</body>
+</html>
