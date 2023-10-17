@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Exercise</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Typing Exercise</h1>
+
+  <div>
+    <label for="modeToggle">Mode:</label>
+    <select id="modeToggle">
+      <option value="practice">Practice</option>
+      <option value="exam">Exam</option>
+    </select>
+  </div>
+
+  <div class="exercise">
+    <h3>Exercise:</h3>
+
+    <ol>
+      <li>
+        <span class="sentence">I <input type="text" id="verb1" data-correct-answer="am" autocomplete="off"> a student.</span>
+        <button class="solveButton" data-question="1">(...)</button>
+        <p id="result1"></p>
+      </li>
+      <li>
+        <span class="sentence">She <input type="text" id="verb2" data-correct-answer="is" autocomplete="off"> my friend.</span>
+        <button class="solveButton" data-question="2">(...)</button>
+        <p id="result2"></p>
+      </li>
+      <li>
+        <span class="sentence">They <input type="text" id="verb3" data-correct-answer="are" autocomplete="off"> engineers.</span>
+        <button class="solveButton" data-question="3">(...)</button>
+        <p id="result3"></p>
+      </li>
+    </ol>
+
+    <button id="solveAllButton">Solve All</button>
+    <button id="checkButton" disabled>Check Answers</button>
+
+    <div id="resultContainer" style="display: none;">
+      <h3>Results</h3>
+      <p id="scoreDisplay"></p>
+      <p id="result1"></p>
+      <p id="result2"></p>
+      <p id="result3"></p>
+    </div>
+  </div>
+
+  <script src="scripts/typingModes.js"></script>
+</body>
+</html>
